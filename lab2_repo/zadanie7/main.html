@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .menu {  
+            border-radius: 25px;
+            top: 0;
+            background-color: #fff458;
+            padding: 20px;
+            margin: 10px;
+            overflow: hidden;
+            color:black ;
+        }
+
+        .logo {
+            float: left;
+            
+        }
+        .logo>img
+        {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+        .logo>div
+        {
+            font-size: 30px;
+            float: left;
+        }
+        .products{
+            float: right;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+        .products>div
+        {
+            color: black;
+            text-decoration: none;
+            margin: 10px;
+            float: right;
+        }
+        #show:checked + .products
+        {
+            display: block;
+        }
+
+        .more-options
+        {
+            transform: translate(0,20%); 
+            text-align: right;
+            display: none;
+            font-size: 23px;
+        }
+
+        @media (max-width: 800px){
+        .more-options
+        {
+          display: block;
+        }
+        .products
+        {
+            
+            display: none;
+            float:none;
+        }
+        .products>div
+        {
+            float:none;
+        }
+        }
+        #show
+        {
+           opacity: 0;
+            transform: translate(10%,-140%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="appleLogo.png" alt="logo">
+            <div><b>APPLE</b></div>
+            
+        </div>
+        <div class="more-options"><b>=</b></div>
+        <input id="show" style="float: right;" type="checkbox">
+        <div class="products">
+            <div> <a href="#i" style="text-decoration:none;color: black;">iPhone</a> </div>
+            <div> <a href="#i" style="text-decoration:none;color: black;">iPod</a> </div>
+            <div> <a href="#i" style="text-decoration:none;color: black;">iPad</a> </div>
+            <div> <a href="#i" style="text-decoration:none;color: black;">iMac</a> </div>
+        </div>
+        
+    </div>
+</body>
+</html>
